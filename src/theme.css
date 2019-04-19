@@ -1,0 +1,9 @@
+:root {
+  /* Color Theme Swatches in Hex */
+  --primary: #034AA6;
+  --primary-shade: #0E3D59;
+  --primary-light: #538EA6;
+  --secondary: #F2C0A2;
+  --tertiary: #F2F2F2;
+  --light-text: whitesmoke;
+}

@@ -1,0 +1,24 @@
+.room {
+  position: relative;
+}
+
+.room__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--primary-light);
+}
+
+.room__title {
+  text-transform: capitalize;
+  position: absolute;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  top: -20px;
+  left: 10%;
+  right: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}

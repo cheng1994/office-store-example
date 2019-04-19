@@ -1,0 +1,49 @@
+.add__button {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background: var(--primary);
+  color: var(--light-text);
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.add__button:hover {
+  --primary: var(--primary-light);
+}
+
+.add__header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  border-bottom: 1px solid var(--primary-shade);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.add__header div {
+  cursor: pointer;
+}
+
+.add__header div:hover {
+  --primary: var(--primary-light);
+}
+
+.add__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: var(--secondary);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.add__item:hover {
+  background: var(--tertiary);
+}
+
+.add__item label {
+  font-weight: bold;
+}

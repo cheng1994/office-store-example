@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { OfficeStore } from './core/office-store/office-store';
+import { employees } from './core/employees';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'office-store-example';
+
+  constructor(private store: OfficeStore) {
+    this.store.setEmployees(employees);
+  }
 }

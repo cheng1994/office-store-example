@@ -1,0 +1,19 @@
+<div class="add">
+  <button *ngIf="!showList; else list" class="add__button" type="button" (click)="showList = true">Add  <fa-icon [icon]="['fas', 'plus-circle']"></fa-icon></button>
+  <ng-template #list>
+    <ng-container *ngIf="(store.state$ | async).employees as employees">
+      <div class="add__list">
+        <div class="add__header">
+          Employees
+          <div (click)="showList = false">
+            <fa-icon icon="times-circle"></fa-icon>
+          </div>
+        </div>
+        <div *ngFor="let employee of employees" class="add__item" (click)="addEmployee(employee)">
+          <span><label>{{employee.title}}: </label> {{employee.name}}</span>
+          <fa-icon [icon]="['fas', 'plus-circle']"></fa-icon>
+        </div>
+      </div>
+    </ng-container>
+  </ng-template>
+</div>

@@ -1,0 +1,8 @@
+<div class="room">
+  <div class="room__title">{{getTitle()}}</div>
+  <ng-container *ngIf="(store.state$ | async)[location] as employees">
+    <div class="room__item" (click)="removeEmployee(employee)" *ngFor="let employee of employees">
+      {{employee.name}} <fa-icon icon="minus-circle"></fa-icon>
+    </div>
+  </ng-container>
+</div>
