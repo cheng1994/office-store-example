@@ -23,11 +23,4 @@ export class OfficeStore extends Store<OfficeState> {
         [location]: this.state[location].filter(item => item.name !== person.name)
       });
     }
-
-    setEmployees(persons: Employee[]): void {
-      this.setState({
-        ...this.state,
-        employees: [...persons]
-      });
-    }
 }

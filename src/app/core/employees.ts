@@ -56,5 +56,5 @@ export const employees: Employee[] = [
     {
         title: 'HR',
         name: 'Toby Flenderson'
-    },
+    }
 ]

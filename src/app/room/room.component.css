@@ -8,6 +8,14 @@
   padding: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid var(--primary-light);
+  border-radius: 5px;
+}
+
+.room__item:hover {
+  background: var(--primary-light);
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--light-text);
 }
 
 .room__title {
