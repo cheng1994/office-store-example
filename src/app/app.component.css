@@ -1,15 +1,28 @@
+h1 {
+  font-family: 'Anton', sans-serif;
+  flex: 100%;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  margin: 0 25% 50px 25%;
+}
+
 .office {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5%;
+  padding: 2% 5%;
 }
 
 .office__room {
   border: 1px solid var(--primary-shade);
   border-radius: 5px;
   padding: 10px;
-  width: 100%;
-  margin: 0 20px;
+  /* width: 100%; */
+  min-width: 200px;
+  flex: 1;
+  margin: 0 20px 20px 20px;
 }
 
 .office__room app-add-person {
